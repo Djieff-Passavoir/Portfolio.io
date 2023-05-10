@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 0.9vh;
+  height: 0.2vh;
+}
+body::-webkit-scrollbar-thumb {
+  background: #53d9d1;
+  border-radius: 2vh;
+}
+/*********BARRE NAV**********/
+nav {
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color:#1a2c34f5; /**#1A2C34**/
+	position: sticky;
+	top: 0;
+  z-index: 3;
+}
+
+nav .Logo {
+	display: flex;
+	align-items: center;
+}
+nav .Logo img {
+	width: 100px;
+	height: 80px;
+}
+nav .Logo #Nom {
+  color: white;
+  font-size: 20px;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+nav ul li {
+  font-size: 20px;
+  color:#53d9d1;
+  margin-right: 40px;
+	margin-left: 30px;
+	cursor: pointer;
+	border-bottom: 1px solid #1A2C34;
+}
+nav ul li:hover {
+	border-bottom-color: #fff;
+}
+
+/*********BARRE NAV**********/
+/*********SLIDER************/
+#slider {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    display: flex;
+}
+#background-video {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -2;
+    }
+#contenertitre {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #20857ea2;
+    opacity: 0.5;
+    z-index: 1;
+    align-items: center;
+}
+h1 {
+  font-size: 10vw;
+  text-transform: uppercase;
+  color : #000000;
+  text-align: center;
+  margin-top: 20%;
+}
+/*********SLIDER************/
+/*********PROJETS**********/
+#contenertous {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, black, #1A2C34 50%, black);
+}
+.contenerp {
+    width: 100%;
+    height: 0;
+    padding-bottom: 35%;
+    display: flex;
+    
+}
+.contenerimg {
+    width: 50%;
+    height: 0;
+    padding-bottom: 30%;
+    position: relative;
+    margin: 3%;
+    border-radius: 5%;
+
+    
+}
+.contenertxt {
+    width: 50%;
+    height: 0;
+    padding-bottom: 30%;
+    margin: 3%;
+}
+.contenerimg iframe {
+    width: 100%!important;
+    height: 80%!important;
+    position: absolute;
+    top: 10%;
+    bottom: 7%;
+    border-radius: 3%;
+    box-shadow: -20px 5px 50px white;
+
+}
+p {
+  margin: 3%;
+  color: white;
+  font-size: 1.2vw;
+  font-family: Yrsa;
+}
+.titre {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 6%;
+  margin-bottom: 8%;
+}
+/*********PROJETS**********/
+
+
+@media screen and (max-width: 700px) {
+    
+  nav {
+    justify-content: center;
+    display:flexbox;
+  }
+  nav ul li {
+    text-align: center;
+  }
+  h1 {
+    font-size: 50px;
+}
+}

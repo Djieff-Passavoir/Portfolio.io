@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Mon blog</title>
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="../Portfolio/Styles/style.css">
+</head>
+<body>
+    
+
+  <div id="bio">
+    <p>Je m’appelle Djieff Passavoir<br><br>
+
+      Je suis étudiant en BUT Métier du Multimédia et de l’Internet (MMI), à l’université Gustave Eiffel de Meaux. Attirer par le domaine du multimédia, je me suis dirigé vers cette formation afin de découvrir les différents types de métiers que ce soit dans le développement, le graphisme ou l’audiovisuel. <br><br>
+      
+      Les domaines dont je souhaite approfondir mes compétences et mes connaissances sont l’audiovisuel particulièrement le montage vidéo et le développement dans le front-end.<br><br>
+      
+      Lors de cette première année en BUT MMI, j’ai acquis de nouvelles connaissances et de nouvelles compétences notamment dans le développement comme les bases des langages de programmation tel que le HTML/CSS, le PHP, le SQL et le Javascript mais aussi dans l’audiovisuel dans les différents logiciels de montage tel que Adobe Première, Photoshop, Ilustrator, Indesign, Xd, Figma.<br><br>
+      
+      J’ai pu mettre ces connaissances et ses compétences au profit de différents projets notamment la réalisation de site web et de leurs maquettes, de montage vidéo / photo, que vous pouvez consulter dans ce portfolio.<br><br>
+      
+      Pendant mes années de lycée j’ai pu découvrir pour la première fois la programmation car j’ai développé un site internet et un jeu vidéo, la matière qui m'a enseigné ce début de programmation est la matière ICN (Informatique et Création Numérique). Je suis allé dans cette option, car j’ai toujours été attiré par l’informatique en général, pour moi ce secteur est source de nouveauté et d’aventure, il y aura toujours de l’embauche, maintenant nous vivons dans un monde où l’informatique ne cesse d’évoluer.<br><br> 
+      
+      J’ai donc choisi d’aller dans cette formation puisse qu'elle correspond aux attentes que je voulais, qui sont une formation qui mélange l’informatique (développement, programmation) avec un côté créatif et artistique (Montage vidéo, photo, graphisme, etc). Pour me permettre de m’orienter dans différentes branches afin que je puisse trouver celle qui me correspond le mieux. <br><br>
+      </p>
+      <a href="Portfolio2.html"><img  id="logo" src="../Portfolio/Ressources/LogoP2.png" width="50px" height="50px"></a>
+  </div>
+
+<!-- count particles -->
+<div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<!-- scripts -->
+<script src="Styles/particles.js"></script>
+<script src="../Portfolio/Styles/app.js"></script>
+
+<!-- stats.js -->
+<script src="Styles/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+</body>
+</html>

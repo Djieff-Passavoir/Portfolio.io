@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 0.9vh;
+  height: 0.2vh;
+}
+body::-webkit-scrollbar-thumb {
+  background: #53d9d1;
+  border-radius: 2vh;
+}
+/*********BARRE NAV**********/
+nav {
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color:#1a2c34f5; /**#1A2C34**/
+	position: sticky;
+	top: 0;
+  z-index: 3;
+}
+
+nav .Logo {
+	display: flex;
+	align-items: center;
+}
+nav .Logo img {
+	width: 100px;
+	height: 80px;
+}
+nav .Logo #Nom {
+  color: white;
+  font-size: 20px;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+nav ul li {
+  font-size: 20px;
+  color:#53d9d1;
+  margin-right: 40px;
+	margin-left: 30px;
+	cursor: pointer;
+	border-bottom: 1px solid #1A2C34;
+}
+nav ul li:hover {
+	border-bottom-color: #fff;
+}
+
+/*********BARRE NAV**********/
+
+/*********SLIDER**********/
+#slider{
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  background-color: #151515eb;
+  
+}
+
+#background-video {
+  width: 100%!important;
+  height: 100%!important;
+  object-fit: cover;
+  position: fixed;
+  z-index: -2;
+  }
+  p {
+    font-size: 20px;
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+/*********SLIDER**********/
+/******PRESENTATION******/
+#Moi {
+  width: 70%;
+  height: 70%;
+  margin-top: 16%;
+  
+
+}
+#PP {
+  width: 20%;
+  height: 100%;
+}
+#contenerpresentation {
+  width: 70%;
+  height: 100%;
+  padding-left: 5%;
+  margin-left: 10%;
+}
+#presentation {
+  font-family: Yrsa;
+  justify-content: right;
+  text-align: justify;
+  color: white;
+  line-height: 150%;
+  font-size: 30px;
+  position: relative;
+
+}
+
+
+/******PRESENTATION*******/
+
+@media screen and (max-width: 700px) {
+    
+    nav {
+      justify-content: center;
+      display:flexbox;
+    }
+    nav ul li {
+      text-align: center;
+    }
+    #Moi {
+      width: 100%;
+      height: 100%;
+      margin-top: 5%;
+      margin-right: 20%;
+      
+    
+    }
+    #contenerpresentation {
+      width: 95%;
+      height: 50%;
+    }
+    #presentation {
+      justify-content: right;
+      text-align: justify;
+      color: white;
+      position: relative;
+      font-size: 14px;
+    
+    }
+    .btn {
+      display:  none;
+    }
+}
